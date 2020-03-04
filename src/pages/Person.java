@@ -8,8 +8,8 @@ public class Person {
 	
 
 	
-//	boolean goesToSchool;
-//	double earning;
+	boolean goesToSchool;
+	double earning;
 	
 	public void anyMethod(String name ,int age) {
 		/*One way of casting from one data type
