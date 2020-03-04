@@ -12,7 +12,7 @@ public class Home {
 		person2.name="Mandy";
 		person2.age = 24;
 		
-		//System.out.println(person1.name);
+		System.out.println(person1.name);
 		
 		
 		person1.anyMethod(person2.name,person1.age+person2.age);
