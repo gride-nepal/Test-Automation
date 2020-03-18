@@ -1,40 +1,151 @@
 package pages;
 
+import java.util.List;
+
 public class Person {
 	
 	String name ="Andy", Name ="Sandy", NAME = "Mandy";
+	
 	int age ;
-	
-	
-
 	
 	boolean goesToSchool;
 	double earning;
+	int jj = 0;
+	
+	
+	public int anyNewMethod(int age) {
+		if(age > 18) {
+			return age;
+		}else {
+			return 0;
+		}
+	}
 	
 	public void anyMethod(String name ,int age) {
 		/*One way of casting from one data type
 		to other data type*/
-		int abc = 24;
-		int c = 2;
-		abc--;
-		System.out.println(abc);
+		String car1 = "Volvo";
+		String car2 ="Honda";
+		String car3 = "Ford";
+		String car4 = "Mazda";
+		//ARRAYS  				{0,1,2,3}
+		String[] carlist = {car1, car2, car3, car4};
 		
-		double xy = abc;
+		int[][] miles = {{2,4},{3,5}};
 		
-		/*Second way of casting from one data type
-		to other data type*/
-		double orderTotal = 500.98;
-		int xyz = (int) orderTotal;
+		//FOR LOOP USING ARRAY
+		for (String mile : carlist) {
+			System.out.println(mile);
+			//miles
+		}
 		
-		String hobby = "Football";
 		
-		System.out.println("My name is "+name + " and I am "+age);
+		
+		// Outputs Volvo
+		
+		//BREAK WITHOUT INCREMENT FOR INISITAL COUNTER FOR LOOP
+		for (int ii = 0; ii < 10;) {
+			
+			
+			  if (jj == 4) {
+				 // System.out.println(ii+"          "+jj);
+			    break;
+			  }
+			  System.out.println(ii+"          "+jj);
+			  jj++;
+			}
+		
+		//FOR EACH
+		String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+		for (String i : cars) {
+		  System.out.println(i);
+		}
+		
+		 System.out.println("=======================================");
+		 
+		 //WHILE LOOP
+		int i = 0;
+		while (i < 5) {
+		  System.out.println(i);
+		  i++;
+		}
+		 System.out.println("=======================================");
+		 
+		 //DO WHILE LOOP
+		int j = 0;
+		do {
+		  System.out.println(j);
+		  j++;
+		}
+		while (j < 5);
+		
+		 System.out.println("=======================================");
+		
+		 //SWITCH CONDITION
+		String device = "ANDRID";
+		
+		switch (device) {
+		
+		case "APPLE":
+			System.out.println("APPLE");
+			break;
+			
+		case "ANDROID":
+			System.out.println("ANDROID");
+			break;
+			
+		default:
+			System.out.println("UNKNOWN");
+			break;
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		//FOR LOOP
+		 for (int x = 20 ; x >= 10 ;x--) {
+			 
+				//System.out.println( "====== "+x);
+				
+			 }
 	
-		hobby = "Basketball";
+		//IF CONDITION
+		 
+//		String fname = "KS123456UI0000RRR555";
+//		String initialN = "d";
+//		
+//		if(fname.length() > 0) {
+//			System.out.println(" =====IF=== "+fname);
+//			
+//			
+//			String[] stringList = fname.split("KS") ;
+//			
+//		
+//		 
+//		}
 		
-		System.out.println(hobby);
-		orderTotal = 100.98;
-		//return orderTotal;
+//		if(x == 3) {
+//			System.out.println("=====IF=== "+x);
+//		}else if(x > 3) {
+//			System.out.println("===ELSE==IF=== "+x);
+//		}else {
+//			//
+//			System.out.println("=====ELSE=== "+x);
+//		}
+//		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 	
 	
